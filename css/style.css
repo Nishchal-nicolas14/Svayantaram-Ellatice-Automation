@@ -82,9 +82,9 @@
     padding: 80px 60px;
     gap: 40px;
 }
-.about-text h2{
+/* .about-text h2{
 
-}
+} */
 
 @media (max-width:768px) {
     .nav-bar{
