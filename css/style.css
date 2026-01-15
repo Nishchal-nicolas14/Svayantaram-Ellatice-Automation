@@ -77,16 +77,31 @@
 
 .about {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     padding: 80px 60px;
     gap: 40px;
 }
-/* .about-text h2{
-
-} */
+.about-text h2{
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.about-text p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.about-text .image{
+    height: 300px;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    color: cornflowerblue;
+    font-size: 18px;
+    border-radius: 8px;
+}
 
 @media (max-width:768px) {
+    /* Making Navigation Bar Responsive when the device size is less than 768px */
     .nav-bar{
         flex-direction: column;
         padding: 20px;
@@ -103,9 +118,7 @@
     .nav-links a{
         font-size: 18px;
     }
-}
-
-@media (max-width: 768px) {
+    /* Making main Header Responsive when the device is less than the max-height(768px) */
     .hero{
         min-height: 100vh;
         min-height: 100svh;
@@ -121,4 +134,23 @@
         font-size: 18px;
         padding: 20px 10px;
     }
+    /* Making the about Section responding when the device size is less than the max-height(768px) */
+    .about{
+        grid-template-columns: 1fr;
+        padding: 50px 20px;
+        text-align: center;
+    }
+    .about-text h2{
+        font-size: 30px;
+    }
+    .about-text p{
+        font-size: 16px;
+    }
+    .about-text .image{
+        height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    
 }
