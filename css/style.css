@@ -91,7 +91,8 @@
     margin-bottom: 10px;
 }
 .about-text .image{
-    height: 300px;
+    grid-template-columns: 1fr 2fr;
+    width: 50px;
     background-color: aqua;
     justify-content: center;
     align-items: center;
@@ -136,21 +137,20 @@
     }
     /* Making the about Section responding when the device size is less than the max-height(768px) */
     .about{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 2fr;
         padding: 50px 20px;
         text-align: center;
     }
     .about-text h2{
-        font-size: 30px;
+        font-size: 20px;
     }
     .about-text p{
-        font-size: 16px;
+        font-size: 8px;
     }
     .about-text .image{
-        height: 220px;
+        height: 120px;
     }
-}
-
-@media (max-width: 768px) {
-    
+    .image{
+        height: fit-content;
+    }
 }
