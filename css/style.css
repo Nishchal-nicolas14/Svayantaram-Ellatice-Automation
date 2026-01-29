@@ -101,6 +101,45 @@
     border-radius: 8px;
 }
 
+/* Style of Our Processes */
+.process{
+    /* background: #83d6f7; */
+    background: linear-gradient(
+    90deg, rgba(131, 214, 247, 0.424) 0%,   
+        rgba(43, 255, 255, 0.424) 100%
+    );
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.process-heading{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.process-blocks{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.process-block{
+    margin: 50px;
+    /* padding: 30px;
+    background-color: antiquewhite;
+    border-radius: 70px; */
+}
+.process-image{
+    align-self: center;
+    justify-content: center;
+    padding: 30px;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.432);
+    background-color: rgb(255, 255, 255);
+    border-radius: 70px;
+}
+.process-number{
+    align-self: flex-start;
+}
+
 @media (max-width:768px) {
     /* Making Navigation Bar Responsive when the device size is less than 768px */
     .nav-bar{
